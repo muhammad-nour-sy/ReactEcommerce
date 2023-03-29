@@ -1,0 +1,141 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.body-container {
+    
+    margin:25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    
+    
+}
+
+.container {
+    
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+     border-radius: 20px;
+    
+   
+}
+
+.container-card{
+    box-shadow: 5px 5px 10px 2px rgba(0,0,0,0.2);
+    transition: transform 0.2s ease-in-out;
+    margin-bottom: 60px;
+    
+    
+   
+}
+
+.container-card:hover{
+    transform: scale(1.15);
+    
+}
+.card {
+    
+    width: 300px;
+    height: 420px;
+    position: relative;
+    background-color: white;
+    
+    
+    
+    
+}
+
+.product-img {
+    width: 300px;
+    height: 230px;
+    background-repeat: no;
+    background-position: 0 -75px;
+    background-size: cover;
+}
+
+.product-detail {
+    
+    position: relative;
+    width: 300px;
+    height: 190px;
+    background-color: #21222d;
+    border-radius: 0 40% 0 0;
+    padding: 0.8rem;
+    font-family: "Poppins", sans-serif;
+    color: white;
+}
+
+.product-detail p {
+    font-size: 0.8rem;
+    color: #5f5f6b;
+    margin-top: 5px;
+}
+
+.buttons {
+    height: 65px;
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.price {
+    font-weight: 700;
+    font-size: 1.1rem;
+    position: absolute;
+    bottom: 55px;
+    right: 15px;
+}
+
+.btn {
+    position: absolute;
+    bottom: 10px;
+    border: none;
+    outline: none;
+    background-color: var(--primary);;
+    color: white;
+    height: 40px;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    font-family: "Poppins", sans-serif;
+    cursor: pointer;
+    
+}
+.btn:hover{
+    background-color: var(--tertiary-color);
+}
+.cart {
+    width:140px;
+    left: 80px;
+}
+
+.favourite {
+    width: 40px;
+    border-radius: 50%;
+    right: 10px;
+}
+
+.product-title{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* number of lines to show */
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+    margin:10px 5px;
+}
+
+.rating{
+    position: absolute;
+    left: 10px;
+    font-size: small;
+    bottom: 40px;
+}
+.rate-count{
+    text-align: left;
+}
